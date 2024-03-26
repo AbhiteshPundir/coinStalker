@@ -38,6 +38,7 @@ const CoinChart = ({currency}) => {
 
     useEffect(()=>{
         CoinChartData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[currency,id,days])
 
     const myData = {
