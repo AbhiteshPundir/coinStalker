@@ -14,12 +14,11 @@ const Exchanges = () => {
             setLoading(false)
         }
         getExchangeData()
-    })
+    },[])
   return (
       loading? <Loader/>:
         <>  
-               
-            <div className="flex items-center justify-evenly mt-10 text-purple-400 font-bold text-2xl underline underline-offset-8">
+            <div className="flex items-center justify-evenly mt-10 mb-5 text-purple-400 font-bold text-2xl underline underline-offset-8">
                 <div className="ml-2 w-16">
                     Logo
                 </div>
@@ -36,7 +35,7 @@ const Exchanges = () => {
             {
                 exchanges.map((item,index)=>{
                 return(
-                    <div key={index} className="flex items-center justify-evenly mt-10">
+                    <div key={index} className="flex rounded-xl duration-300 items-center justify-evenly py-5 hover:bg-slate-600">
                         <div className="">
                             <img className="h-20" src={item.image} alt="" />
                         </div>

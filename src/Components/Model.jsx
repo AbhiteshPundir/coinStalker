@@ -4,14 +4,14 @@ import { useGLTF, PresentationControls, Stage } from "@react-three/drei"
 
 
 function Model(props){
-    const {scene} = useGLTF('./bitcoin.glb')
+    const {scene} = useGLTF('../assets/bitcoin.glb')
     return <primitive object={scene} {...props} /> 
 }
 
 const OurModel = () => {
   return (
     <div>
-           <Canvas dpr={[1,2]} shadows camera={{fov: 45}} style={{position:"absolute", top:"7%"}}  >
+        <Canvas dpr={[1,2]} shadows camera={{fov: 45}} style={{position:"absolute", top:"7%"}}  >
         
         <color attach="background" args={['#101010']} /> 
         <ambientLight intensity={-1}  />
