@@ -6,7 +6,7 @@ import Layout from './Layout.jsx'
 import Exchanges from './Components/Exchanges.jsx'
 import './index.css'
 import CoinDetails from './Components/CoinDetails.jsx'
-
+import LoginForm from './Components/Login.jsx'
 const router= createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
@@ -14,6 +14,7 @@ const router= createBrowserRouter(
       <Route path='coins/:id' element={<CoinDetails/>}/>
       <Route path='coinsPage' element={<CoinPage/>}/>
       <Route path='exchanges' element={<Exchanges/>}/>
+      <Route path='login' element={<LoginForm/>}/>
     </Route>
   )
 )

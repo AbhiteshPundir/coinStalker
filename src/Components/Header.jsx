@@ -20,7 +20,7 @@ function Header() {
                         <NavLink
                         to={""}
                             className={({isActive}) =>
-                                `block py-2 pr-4 pl-3 duration-200 ${isActive? "text-white": "text-black hover:text-gray-300" } text-2xl font-bold border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0  lg:p-0`
+                                `block py-2 pr-4 pl-3 duration-200 ${isActive? "text-white": "text-black hover:text-indigo-400" } text-2xl font-bold border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0  lg:p-0`
                             }
                         >
                             Home
@@ -31,7 +31,7 @@ function Header() {
                         <NavLink
                         to={"/coinsPage"}
                             className={({isActive}) =>
-                                `block py-2 pr-4 pl-3 duration-200 ${isActive? "text-white": "text-black hover:text-gray-300"} border-b text-2xl font-bold border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0`
+                                `block py-2 pr-4 pl-3 duration-300 ${isActive? "text-white": "text-black hover:text-indigo-400"} border-b text-2xl font-bold border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0`
                             }
                         >
                             Coins
@@ -41,7 +41,7 @@ function Header() {
                         <NavLink
                         to={"/exchanges"}
                             className={({isActive}) =>
-                                `block py-2 pr-4 pl-3 duration-200 ${isActive? "text-white": "text-black hover:text-gray-300"} border-b text-2xl font-bold border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0`
+                                `block py-2 pr-4 pl-3 duration-300 ${isActive? "text-white": "text-black hover:text-indigo-400"} border-b text-2xl font-bold border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0`
                             }
                         >
                             Exchanges
@@ -51,7 +51,7 @@ function Header() {
                 <div className="flex items-center lg:order-2">
                     <Link
                         to="/login"
-                        className="shadow-sm shadow-black bg-purple-900 border-2 border-purple-900 text-white font-semibold hover:bg-purple-700 hover:border-1  focus:ring-4 focus:ring-gray-40000 rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none transition-colors duration-300"
+                        className="shadow-sm shadow-black bg-purple-900 border-2 border-purple-900 text-white font-semibold hover:bg-violet-700 hover:border-1  focus:ring-4 focus:ring-gray-40000 rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none transition duration-200 transform hover:-translate-y-1 hover:shadow-lg"
                     >
                         Log in
                     </Link> 

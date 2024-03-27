@@ -63,7 +63,7 @@ const Coins= () => {
   const CoinCard=({coindata,id,currencysymbol}) => {
     const profit = coindata.price_change_percentage_24h>0;
     return(
-      <Link to={`/coins/${id}`} className='rounded-2xl text-black hover:bg-slate-600 duration-300 decoration-none flex items-center justify-evenly py-5'>
+      <Link to={`/coins/${id}`} className='rounded-2xl text-black hover:bg-slate-600 hover:-translate-y-1 duration-200 decoration-none flex items-center justify-evenly py-5'>
         <div className="">
             <img className="h-24" src={coindata.image} alt="" />
         </div>
