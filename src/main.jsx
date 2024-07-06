@@ -7,7 +7,7 @@ import Exchanges from './Components/Exchanges.jsx'
 import './index.css'
 import CoinDetails from './Components/CoinDetails.jsx'
 import LoginForm from './Components/Login.jsx'
-import { FirebaseProvider } from './Context/Firebase.jsx'
+// import { FirebaseProvider } from './Context/Firebase.jsx'
 
 const router= createBrowserRouter(
   createRoutesFromElements(
@@ -23,10 +23,10 @@ const router= createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   //<React.StrictMode>
-  <FirebaseProvider>
+  // <FirebaseProvider>
     <div className='{classes.main}'>
     <RouterProvider router={router}/>
     </div>
-  </FirebaseProvider>
+  // </FirebaseProvider>
   //</React.StrictMode>,
 )
