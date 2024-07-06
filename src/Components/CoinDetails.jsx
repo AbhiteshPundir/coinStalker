@@ -34,36 +34,36 @@ const CoinDetails = () => {
     loading ? <Loader/> : <> 
          <div className='text-white flex pl-32'> 
            <div className='w-2/4 flex-col justify-center pt-6'>
-           <div className='w-24 flex justify-evenly items-center'>
+            <div className='w-24 flex justify-evenly items-center'>
              <button className="rounded-md bg-orange-700 hover:border-white border-2 border-black w-10 mt-6" onClick={()=>setCurrency('inr')} >inr</button>
              <button className="rounded-md bg-orange-700 hover:border-white w-10 mt-6 border-2 border-black" onClick={()=>setCurrency('usd')}>usd</button>
-           </div>
-              <div className="py-4">
-              {coin.last_updated}
-              </div>
-              <div className="coin-image">
-                <img className='h-40' src={coin.image.large} alt="" />
-              </div>
-              <div className="items-center font-bold text-3xl ">
-              {coin.name}
-              </div>
-              <div className="coin-price">
-             {currencySymbol}  {coin.market_data.current_price[currency]}
-              </div>
-              <div className="flex items-center">
-              {profit ? <BiSolidUpArrow color='green' /> : <BiSolidDownArrow color='red' />  }
-                {coin.market_data.price_change_percentage_24h.toFixed(3)} % 
-              </div>
-              <div className="flex items-center text-2xl font-bold">
-                <IoPulseOutline color='orange' /> 
-               #{coin.market_cap_rank}
-              </div>
-              <div className='coin-desc'>
-                <p>     {coin.description['en'].split('.')[0]} </p>
-        </div>
             </div>
+            <div className="py-4">
+            {coin.last_updated}
+            </div>
+            <div className="coin-image">
+              <img className='h-40' src={coin.image.large} alt="" />
+            </div>
+            <div className="items-center font-bold text-3xl ">
+            {coin.name}
+            </div>
+            <div className="coin-price">
+            {currencySymbol}  {coin.market_data.current_price[currency]}
+            </div>
+            <div className="flex items-center">
+            {profit ? <BiSolidUpArrow color='green' /> : <BiSolidDownArrow color='red' />  }
+              {coin.market_data.price_change_percentage_24h.toFixed(3)} % 
+            </div>
+            <div className="flex items-center text-2xl font-bold">
+              <IoPulseOutline color='orange' /> 
+              #{coin.market_cap_rank}
+            </div>
+            <div className='coin-desc'>
+              <p>     {coin.description['en'].split('.')[0]} </p>
+            </div>
+          </div>
             <CoinChart currency={currency} />
-            </div>
+        </div>
     </> 
   }
   

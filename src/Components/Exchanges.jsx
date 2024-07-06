@@ -18,34 +18,34 @@ const Exchanges = () => {
   return (
       loading? <Loader/>:
         <>  
-            <div className="flex items-center justify-evenly mt-10 mb-5 text-purple-400 font-bold text-2xl underline underline-offset-8">
+            <div className="flex items-center justify-between lg:justify-evenly px-7 lg:px-0 mt-10 mb-5 text-purple-400 font-bold text-base lg:text-2xl underline underline-offset-8">
                 <div className="ml-2 w-16">
                     Logo
                 </div>
-                <div className="w-1 ">
+                <div className="lg:w-1 ">
                 Name
                 </div>
-                <div className="w-1 ">
+                <div className="lg:w-1 ">
                 Volume(24h)
                 </div>
-                <div className="w-1 ">
+                <div className="lg:w-1 ">
                 Rank
                 </div>
             </div>
             {
                 exchanges.map((item,index)=>{
                 return(
-                    <div key={index} className="flex rounded-xl duration-300 items-center justify-evenly py-5 hover:bg-slate-600">
+                    <div key={index} className="flex rounded-xl duration-300 items-center justify-between lg:justify-evenly px-10 lg:px-0 py-5 hover:bg-slate-600">
                         <div className="">
-                            <img className="h-20" src={item.image} alt="" />
+                            <img className="h-16 lg:h-20" src={item.image} alt="" />
                         </div>
-                        <div className="w-1 text-white font-semibold">
+                        <div className="lg:w-1 text-white text-sm lg:text-base font-semibold">
                         {item.name}
                         </div>
-                        <div className="w-1 text-white font-semibold">
+                        <div className="lg:w-1 text-white text-sm lg:text-base font-semibold">
                         {item.trade_volume_24h_btc.toFixed(2)}
                         </div>
-                        <div className="w-1 text-white font-semibold">
+                        <div className="lg:w-1 text-white text-sm lg:text-base font-semibold">
                         {item.trust_score_rank}
                         </div>
                     </div>
